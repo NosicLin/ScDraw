@@ -1,3 +1,0 @@
-import math
-print math.ceil(math.sin(math.pi))
-print math.cos(1)

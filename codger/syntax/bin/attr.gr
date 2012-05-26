@@ -1,5 +1,0 @@
-a.b=3
-print 
-a.b.c()
-print 
-a.b+=4
