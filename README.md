@@ -26,7 +26,7 @@ sudo apt-get install mesa-common-dev  libgl1-mesa-dev libglu1-mesa-dev freeglut3
 绘图示例：
 =======
 1. [IFS算法绘制图形](/ScDraw/wiki/IFS算法绘制图形)
-2. [LS文法绘制图形](/ScDraw/wiki/LS文法绘制图形)
+2. [LS文法绘制图形](https://github.com/NosicLin/ScDraw/wiki/LS%E6%96%87%E6%B3%95%E7%BB%98%E5%88%B6%E5%9B%BE%E5%BD%A2) 
 3. [时间逃逸算法Julia集](/ScDraw/wiki/时间逃逸算法Julia集)
 
 加入ScDraw的开发：
