@@ -1,0 +1,25 @@
+shape_name="shape"
+
+class shape 
+	attr width=0
+	attr height=0
+
+
+	func init(x,y=4)
+		this.width=x
+		this.height=y
+	end 
+		
+	func area()
+		return this.width* this.height;
+	end 
+end 
+
+c1=shape(3)
+print c1.area()
+
+c2=shape(4,5)
+print c2.area()
+print c1.area()
+
+

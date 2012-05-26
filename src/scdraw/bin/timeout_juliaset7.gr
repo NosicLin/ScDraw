@@ -1,0 +1,22 @@
+import julialib
+import julia256color
+import math
+j=julialib.julia(-0.70176,-0.3842,400,2.0,width,height)
+j.cols=julia256color.vga256
+j.set_color=func(k,r)
+	iter_nu=this.iter_nu
+	if k<iter_nu 
+		if k<20
+			c=Float(k)/25+0.1
+			setColor(c,0,c)
+		else
+			c=Float(k)/(iter_nu/10)
+			c=$math.sqrt(c)
+			c=$math.sqrt(c)
+			setColor(1.0-c,c,1.0-c)
+		end
+	else
+		setColor(0,0,1.0)
+	end
+end 
+j.draw()
