@@ -1,0 +1,87 @@
+import math
+import julia256color
+color256=julia256color.color256
+class julia
+	attr c_re
+	attr c_im
+	attr w_width
+	attr w_height
+	attr iter_nu
+	attr radius
+	public attr set_color=func(k,r)
+			cols_nu=this.cols.size()
+			col=this.cols[k%cols_nu]
+			red=col[0]
+			green=col[1]
+			blue=col[2]
+			setColor(Float(red)/255.0,Float(green)/255.0,Float(blue)/255.0)
+		end 
+		
+		
+	public attr cols=color256
+
+	func init(re,im,iter_nu,radius,w_width,w_height)
+		this.c_re=re
+		this.c_im=im
+		this.iter_nu=iter_nu
+		this.radius=radius
+		this.w_width=w_width
+		this.w_height=w_height
+	end 
+
+	func draw()
+		c_re=this.c_re
+		c_im=this.c_im
+		w_width=this.w_width
+		w_height=this.w_height
+		iter_nu=this.iter_nu
+		radius=this.radius
+		cols=this.cols
+
+		xs=-1.5
+		xl=1.5
+
+		ys=-1.5
+		yl=1.5
+
+		dx=(xl-xs)/w_width
+		dy=(yl-ys)/w_height
+
+		i=0
+		while i<w_width
+			j=0
+			while j<w_height
+				x=xs+dx*i
+				y=ys+dy*j
+
+				k=0
+				while k<iter_nu
+					r=x*x+y*y
+					r=$math.sqrt(r)
+					if r >radius
+						break
+					else
+						x0=x*x-y*y+c_re
+						y0=2*x*y+c_im
+						x=x0
+						y=y0
+					end 
+					k=k+1
+				end 
+				this.set_color(k,r)
+				drawPixel(i,j)
+				j+=1
+			end 
+			i+=1
+		end 
+	end 
+end 
+
+export julia
+
+
+
+
+
+
+	

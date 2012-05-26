@@ -1,12 +1,11 @@
-# Compiled Object files
-*.slo
-*.lo
+*.dep
+tags
+*.swp
+*.exe
 *.o
-
-# Compiled Dynamic libraries
-*.so
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
+*.dat
+
+temp
+
+

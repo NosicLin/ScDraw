@@ -1,0 +1,5 @@
+import julialib
+import julia256color
+j=julialib.julia(0.45,-0.1428,400,2.0,width,height)
+j.cols=julia256color.vga256
+j.draw()
