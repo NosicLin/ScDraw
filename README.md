@@ -28,6 +28,7 @@ make          #编译
 2. [LS文法绘制图形](https://github.com/NosicLin/ScDraw/wiki/LS%E6%96%87%E6%B3%95%E7%BB%98%E5%88%B6%E5%9B%BE%E5%BD%A2) 
 3. [时间逃逸算法Julia集](https://github.com/NosicLin/ScDraw/wiki/%E6%97%B6%E9%97%B4%E9%80%83%E9%80%B8%E7%AE%97%E6%B3%95Julia%E9%9B%86) 
 4. [时间逃逸算法Julia集]( https://github.com/NosicLin/ScDraw/wiki/%E6%97%B6%E9%97%B4%E9%80%83%E9%80%B8%E7%AE%97%E6%B3%95Julia%E9%9B%862)
+
 加入ScDraw的开发：
 ========
 ScDraw是一款开源的软件，它还有许多功能需要去完善，非常高兴你能加入ScDraw的开发。
