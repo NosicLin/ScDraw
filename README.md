@@ -4,15 +4,6 @@ ScDraw是一个脚本绘图软件，它内部集成脚本引擎Codger，并向�
 
 下载与编译
 ========
-```
-git clone git://github.com/NosicLin/ScDraw.git   #下载
-cd ScDraw     #进入下载的文件
-make          #编译
-```
-编译后可以在当前目录bin下找到可执行文件
-
-安装
-======
 在编译前，你需要安装wxWidget和opengl库,ubuntu平台安装为：
 ````
 #wxWidget窗口库
@@ -20,6 +11,14 @@ sudo apt-get install libwxgtk2.8-dev
 #opengl图形库
 sudo apt-get install mesa-common-dev  libgl1-mesa-dev libglu1-mesa-dev freeglut3-dev  
 ```
+下载与编译
+```
+git clone git://github.com/NosicLin/ScDraw.git   #下载
+cd ScDraw     #进入下载的文件
+make          #编译
+```
+编译后可以在当前目录bin下找到可执行文件
+
 
 
 
