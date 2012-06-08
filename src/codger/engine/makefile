@@ -4,7 +4,7 @@ SRC=eg_codger.c eg_sframe.c eg_thread.c  except.c eg_buildin.c
 
 
 DEBUG=
-
+BIN= codger.c
 #BIN= codger.c codger_nogc.c
 
 
@@ -27,7 +27,7 @@ BIN_OBJ_NAME=$(BIN:%.c=%.o)
 BIN_OBJ_NAME_WITH_PATH=$(addprefix obj/,$(BIN_OBJ_NAME))
 
 CC=gcc
-FLAGS=-g -Wall  -Werror -include sys/types.h
+FLAGS= -O3 -Wall  -Werror -include sys/types.h
 INCLUDE=-I. -I./debug   -I../  
 LIB=-Llib -l$(PROJECT) -l$(PROJECT)debug  -L../lib -lmemory \
 	-llexical -lobject -lutility_c -lsyntax -lextends -lm

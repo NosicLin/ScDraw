@@ -1,7 +1,7 @@
 PROJECT=utility_c
 SRC=  args.c splstr.c
 DEBUG=
-#BIN=args_test.c  test_splstr.c  \
+BIN=args_test.c  test_splstr.c  \
 
 OBJ_NAME=$(SRC:%.c=%.o) 
 OBJ_NAME_WITH_PATH=$(addprefix obj/,$(OBJ_NAME))

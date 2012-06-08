@@ -26,7 +26,7 @@ BIN_OBJ_NAME=$(BIN:%.cc=%.o)
 BIN_OBJ_NAME_WITH_PATH=$(addprefix obj/,$(BIN_OBJ_NAME))
 
 CC=g++
-FLAGS=-g -Wall  `wx-config --cxxflags --libs`  \
+FLAGS=-O3 -Wall  `wx-config --cxxflags --libs`  \
 	`wx-config --libs --cxxflags --gl-libs`
 
 INCLUDE= -I. -I../codger -include sys/types.h

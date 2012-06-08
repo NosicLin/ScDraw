@@ -193,7 +193,7 @@ void EgThread_SFrameReturn(EgThread* eg)
 
 int  EgThread_Run(EgThread* e)
 {
-	int exit_code;
+	int exit_code=0;
 	eg_thread_cur=e;
 	if(e->t_fstack==NULL)
 	{
@@ -206,13 +206,13 @@ int  EgThread_Run(EgThread* e)
 
 
 	/* used for temp compute */
-	register u_int8_t cur_code;	/* instruction register*/
-	register u_int32_t rd; 		/* data register */
-	u_int32_t rs; 				/* status register */
-	register GrObject* acc;		
-	register GrObject* r0;
-	register GrObject* r1;
-	register GrObject* r2;
+	register u_int8_t cur_code=0;	/* instruction register*/
+	register u_int32_t rd=0; 		/* data register */
+	u_int32_t rs=0; 				/* status register */
+	register GrObject* acc=NULL;		
+	register GrObject* r0=NULL;
+	register GrObject* r1=NULL;
+	register GrObject* r2=NULL;
 
 
 
@@ -482,7 +482,6 @@ next_instruct:
 			sp--;
 			goto next_instruct;
 
-
 			/* Data op */
 		case OP_LOAD_NIL:
 			acc=Gr_Object_Nil;
@@ -659,7 +658,7 @@ next_instruct:
 
 over:
 
-	fprintf(stderr,"EgThread With Code(%d) sp=%d\n",exit_code,sp);
+//	fprintf(stderr,"EgThread With Code(%d) sp=%d\n",exit_code,sp);
 	eg->t_sp=0;
 	eg->t_pc=0;
 	return exit_code;
